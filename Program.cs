@@ -43,6 +43,10 @@ int ContaFallas = 0;
 // ¡Definir en 0, NO EN OTRO NUMERO, porque causara que el conteo este desfazado!
 // ¡Si el usuario adivinara a la primera, esto causaria que aun asi cuente un error!
 
+// Esto inicia nuestro loop
+// VerificadorCorrecto ⬇ es la variable que se usa para mantener este loop ejecutandose
+// VerificadorCorrecto esta en TRUE! Ya que le pusimos la condicional de que
+// Si VerificadorCorrecto EQUIVALE A true el siguiente codigo se ejecutara
 while (VerificadorCorrecto == true){
 
     // Linea que pide el input del usuario
