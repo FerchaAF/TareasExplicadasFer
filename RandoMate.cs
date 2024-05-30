@@ -2,6 +2,7 @@
 Console.WriteLine("Hello, World!");
 
 bool Loopy = true;
+int PuntosInutiles = 0;
 
 while (Loopy)
 {
@@ -28,6 +29,7 @@ while (Loopy)
             if (RespuestaUsuario == RespuestaSuma)
             {
                 Console.WriteLine("¡Felicitaciones!\n+1 Punto inutil");
+                PuntosInutiles += 1;
             }
             else
             {
@@ -44,6 +46,7 @@ while (Loopy)
             if (RespuestaUsuario == RespuestaSuma)
             {
                 Console.WriteLine("¡Felicitaciones!\n+1 Punto inutil");
+                PuntosInutiles += 1;
             }
             else
             {
@@ -60,6 +63,7 @@ while (Loopy)
             if (RespuestaUsuario == RespuestaSuma)
             {
                 Console.WriteLine("¡Felicitaciones!\n+1 Punto inutil");
+                PuntosInutiles += 1;
             }
             else
             {
@@ -69,13 +73,17 @@ while (Loopy)
         }
         else
         {
+            float NumeroDiv1 = NumeroUs1;
+            float NumeroDiv2 = NumeroUs2;
             Console.WriteLine("Dividiendo...\n" + NumeroUs1 + "/" + NumeroUs2 + "\n");
-            int RespuestaSuma = NumeroUs1 / NumeroUs2;
+            float RespuestaSuma = NumeroDiv1 / NumeroDiv2;
+            Console.WriteLine((NumeroDiv1 / NumeroDiv2));
             Console.WriteLine("¿Cual es la respuesta correcta?");
-            int RespuestaUsuario = Convert.ToInt32(Console.ReadLine());
+            float RespuestaUsuario = float.Parse(Console.ReadLine());
             if (RespuestaUsuario == RespuestaSuma)
             {
                 Console.WriteLine("¡Felicitaciones!\n+1 Punto inutil");
+                PuntosInutiles += 1;
             }
             else
             {
@@ -89,3 +97,4 @@ while (Loopy)
         Console.WriteLine("Error");
     }
 }
+Console.WriteLine("\nBien tus puntos inutiles totales son...!\n" + PuntosInutiles);
